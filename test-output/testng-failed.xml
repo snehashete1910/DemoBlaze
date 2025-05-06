@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="utilities.ExtendReport"/>
-  </listeners>
-  <test thread-count="5" name="t(failed)">
-    <parameter name="browser" value="chrome"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC003_loginDDT">
+      <class name="testCases.Verify_total_phone_list">
         <methods>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="verifyloginddt" invocation-numbers="1 3"/>
+          <include name="verifylinksonpage"/>
         </methods>
-      </class> <!-- testCases.TC003_loginDDT -->
+      </class> <!-- testCases.Verify_total_phone_list -->
     </classes>
-  </test> <!-- t(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

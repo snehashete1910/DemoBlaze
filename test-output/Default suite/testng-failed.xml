@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC003_loginDDT">
+      <class name="testCases.Verify_total_phone_list">
         <methods>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="verifyloginddt" invocation-numbers="1 3"/>
+          <include name="verifylinksonpage"/>
         </methods>
-      </class> <!-- testCases.TC003_loginDDT -->
+      </class> <!-- testCases.Verify_total_phone_list -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
